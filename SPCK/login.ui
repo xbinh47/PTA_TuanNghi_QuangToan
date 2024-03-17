@@ -105,7 +105,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>170</y>
+      <y>210</y>
       <width>291</width>
       <height>31</height>
      </rect>
@@ -120,7 +120,7 @@ border-radius: 10px;</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>130</y>
+      <y>160</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -166,7 +166,7 @@ border-radius: 10px;</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>270</y>
+      <y>340</y>
       <width>291</width>
       <height>31</height>
      </rect>
@@ -181,7 +181,7 @@ border-radius: 10px;</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>230</y>
+      <y>290</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -221,67 +221,6 @@ border-radius: 10px;</string>
     </property>
     <property name="text">
      <string>Password:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>320</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>0</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled/>
-     </palette>
-    </property>
-    <property name="font">
-     <font>
-      <family>Fredoka One</family>
-      <pointsize>18</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Email:</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>360</y>
-      <width>291</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border: 0px solid;
-border-radius: 10px;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -476,8 +415,6 @@ border-radius: 10px;</string>
    <zorder>label_4</zorder>
    <zorder>textEdit_2</zorder>
    <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
-   <zorder>textEdit_3</zorder>
    <zorder>pushButton</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>

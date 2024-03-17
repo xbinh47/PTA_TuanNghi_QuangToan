@@ -14,6 +14,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        super().__init__(parent)
 
 
 if __name__ == "__main__":
