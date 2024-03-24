@@ -101,21 +101,6 @@
      <string>Create your account</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="name">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>170</y>
-      <width>291</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border: 0px solid;
-border-radius: 10px;</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
@@ -160,21 +145,6 @@ border-radius: 10px;</string>
     </property>
     <property name="text">
      <string>Name:</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="password">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>270</y>
-      <width>291</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border: 0px solid;
-border-radius: 10px;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -269,22 +239,7 @@ border-radius: 10px;</string>
      <string>Email:</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="email">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>360</y>
-      <width>291</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border: 0px solid;
-border-radius: 10px;</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="create">
+   <widget class="QPushButton" name="btnRegister">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -488,31 +443,140 @@ border-radius: 10px;</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="txtName">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>400</y>
+      <x>30</x>
+      <y>170</y>
+      <width>201</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 0px solid;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtPassword">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>201</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 0px solid;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtEmail">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>380</y>
       <width>113</width>
       <height>28</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 0px solid;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRegister_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>460</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Fredoka One</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Login</string>
     </property>
    </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>label_3</zorder>
-   <zorder>name</zorder>
    <zorder>label_4</zorder>
-   <zorder>password</zorder>
    <zorder>label_5</zorder>
    <zorder>label_6</zorder>
-   <zorder>email</zorder>
-   <zorder>create</zorder>
+   <zorder>btnRegister</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
    <zorder>label_10</zorder>
-   <zorder>lineEdit</zorder>
+   <zorder>txtName</zorder>
+   <zorder>txtPassword</zorder>
+   <zorder>txtEmail</zorder>
+   <zorder>btnRegister_2</zorder>
   </widget>
  </widget>
  <resources/>
