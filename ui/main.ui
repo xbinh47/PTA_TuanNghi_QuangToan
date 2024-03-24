@@ -756,51 +756,6 @@ background: rgb(255, 255, 255)</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_41">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>180</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>192</red>
-          <green>192</green>
-          <blue>192</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>192</red>
-          <green>192</green>
-          <blue>192</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled/>
-     </palette>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>UV index</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_42">
     <property name="geometry">
      <rect>
@@ -981,51 +936,6 @@ background: rgb(255, 255, 255)</string>
      <string>Visibility</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_46">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>340</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>192</red>
-          <green>192</green>
-          <blue>192</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>192</red>
-          <green>192</green>
-          <blue>192</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled/>
-     </palette>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Air Quality</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="Windstatus">
     <property name="geometry">
      <rect>
@@ -1180,24 +1090,6 @@ background: rgb(255, 255, 255)</string>
      <string>km</string>
     </property>
    </widget>
-   <widget class="QLabel" name="airquality">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>380</y>
-      <width>81</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>48</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>120</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
@@ -1225,6 +1117,119 @@ background: rgb(255, 255, 255)</string>
       <width>111</width>
       <height>21</height>
      </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>180</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>330</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clouds</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="Humidity_2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>390</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="value">
+     <number>50</number>
     </property>
    </widget>
    <zorder>label</zorder>
@@ -1268,12 +1273,10 @@ background: rgb(255, 255, 255)</string>
    <zorder>label_40</zorder>
    <zorder>label_36</zorder>
    <zorder>rainpercent</zorder>
-   <zorder>label_41</zorder>
    <zorder>label_42</zorder>
    <zorder>label_43</zorder>
    <zorder>label_44</zorder>
    <zorder>label_45</zorder>
-   <zorder>label_46</zorder>
    <zorder>Windstatus</zorder>
    <zorder>label_48</zorder>
    <zorder>label_49</zorder>
@@ -1283,9 +1286,11 @@ background: rgb(255, 255, 255)</string>
    <zorder>Humidity</zorder>
    <zorder>Visibility</zorder>
    <zorder>label_54</zorder>
-   <zorder>airquality</zorder>
    <zorder>pushButton</zorder>
    <zorder>cb_city</zorder>
+   <zorder>label_46</zorder>
+   <zorder>label_47</zorder>
+   <zorder>Humidity_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
