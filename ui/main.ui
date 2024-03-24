@@ -1201,23 +1201,23 @@ background: rgb(255, 255, 255)</string>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>490</y>
-      <width>121</width>
-      <height>41</height>
+      <x>420</x>
+      <y>10</y>
+      <width>51</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>4</pointsize>
       <bold>true</bold>
      </font>
     </property>
     <property name="text">
-     <string>suggest where to go</string>
+     <string>place to visit</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="cb_city">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -1285,7 +1285,7 @@ background: rgb(255, 255, 255)</string>
    <zorder>label_54</zorder>
    <zorder>airquality</zorder>
    <zorder>pushButton</zorder>
-   <zorder>comboBox</zorder>
+   <zorder>cb_city</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
