@@ -101,7 +101,7 @@
      <string>Create your account</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="name">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -162,7 +162,7 @@ border-radius: 10px;</string>
      <string>Name:</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QTextEdit" name="password">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -223,7 +223,7 @@ border-radius: 10px;</string>
      <string>Password:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="login">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -294,14 +294,14 @@ border-radius: 10px;</string>
      </font>
     </property>
     <property name="text">
-     <string>Create</string>
+     <string>Login</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
+      <x>500</x>
+      <y>140</y>
       <width>101</width>
       <height>91</height>
      </rect>
@@ -319,8 +319,8 @@ border-radius: 10px;</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>40</y>
+      <x>460</x>
+      <y>240</y>
       <width>131</width>
       <height>31</height>
      </rect>
@@ -365,8 +365,8 @@ border-radius: 10px;</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>70</y>
+      <x>590</x>
+      <y>240</y>
       <width>131</width>
       <height>31</height>
      </rect>
@@ -408,17 +408,37 @@ border-radius: 10px;</string>
      <string>Pro</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>311</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/OIP.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>label_3</zorder>
-   <zorder>textEdit</zorder>
+   <zorder>name</zorder>
    <zorder>label_4</zorder>
-   <zorder>textEdit_2</zorder>
+   <zorder>password</zorder>
    <zorder>label_5</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>login</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
+   <zorder>label_6</zorder>
   </widget>
  </widget>
  <resources/>
