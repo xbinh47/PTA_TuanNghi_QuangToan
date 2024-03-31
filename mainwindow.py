@@ -3,6 +3,8 @@ from PyQt6.QtWidgets import QMessageBox
 from PyQt6 import uic
 import sys
 import sqlite3
+import requests
+import datetime
 # http://openweathermap.org/img/w/04d.png
 class Register(QtWidgets.QMainWindow):
     def __init__ (self):
@@ -101,11 +103,30 @@ class MainPage(QtWidgets.QMainWindow):
         super().__init__() 
         uic.loadUi("ui/main.ui", self)
         self.name = ""
+        self.renderWeather()
+        self.Search.clicked.connect(self.renderWeather)
     
     def setUsername(self, name):
         self.name = name
         # self.txtUsername.setText(name)
 
+    def renderWeather(self):
+        city = self.cb_city.currentText()
+        # A GET request to the API
+        url = f'https://api.openweathermap.org/data/2.5/forecast?q={city}&cnt=7&appid=6333a9f7333441bb85536e56729e124c&units=metric'
+        response = requests.get(url)
+        print(response)
+        # Print the response
+        response_json = response.json()
+        weatherInfo = response_json["list"][0]
+        self.Pressure.setText(str(weatherInfo["main"]["pressure"]))
+        self.Windstatus.setText(str(weatherInfo["wind"]["speed"]))
+        self.Visibility.setText(str(weatherInfo["visibility"]))
+        self.Humidity.setValue(weatherInfo["main"]["humidity"])
+        self.Clouds.setValue(weatherInfo["clouds"]["all"])
+        self.Heat.setText(str(weatherInfo["main"]["temp"]))
+        self.sunrise.setText((datetime.datetime.utcfromtimestamp(response_json["city"]["sunrise"]) + datetime.timedelta(hours=7)).strftime("%H:%M"))
+        self.sunset.setText((datetime.datetime.utcfromtimestamp(response_json["city"]["sunset"]) + datetime.timedelta(hours=7)).strftime("%H:%M"))
     
 if __name__ == '__main__':
     sqliteConnection = sqlite3.connect('data/data.db')
@@ -125,9 +146,8 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
     loginPage = Login()
-    # loginPage.show()
+    loginPage.show()
     registerPage = Register()
-    registerPage.show()
     mainPage = MainPage()
 
     err_box = QMessageBox()

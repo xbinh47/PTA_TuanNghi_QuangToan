@@ -106,7 +106,7 @@ background: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(
      </font>
     </property>
     <property name="text">
-     <string>Monday, 02:00</string>
+     <string>Monday</string>
     </property>
    </widget>
    <widget class="Line" name="line">
@@ -939,7 +939,7 @@ background: rgb(255, 255, 255)</string>
    <widget class="QLabel" name="Windstatus">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>430</x>
       <y>230</y>
       <width>71</width>
       <height>31</height>
@@ -947,7 +947,7 @@ background: rgb(255, 255, 255)</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>32</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
@@ -1065,7 +1065,7 @@ background: rgb(255, 255, 255)</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>32</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
@@ -1090,25 +1090,6 @@ background: rgb(255, 255, 255)</string>
      <string>km</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>10</y>
-      <width>51</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>4</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>place to visit</string>
-    </property>
-   </widget>
    <widget class="QComboBox" name="cb_city">
     <property name="geometry">
      <rect>
@@ -1120,7 +1101,17 @@ background: rgb(255, 255, 255)</string>
     </property>
     <item>
      <property name="text">
-      <string/>
+      <string>Thành phố Hồ Chí Minh</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hà Nội</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nha Trang</string>
      </property>
     </item>
    </widget>
@@ -1214,7 +1205,7 @@ background: rgb(255, 255, 255)</string>
      <string>Clouds</string>
     </property>
    </widget>
-   <widget class="QProgressBar" name="Humidity_2">
+   <widget class="QProgressBar" name="Clouds">
     <property name="geometry">
      <rect>
       <x>590</x>
@@ -1230,6 +1221,37 @@ background: rgb(255, 255, 255)</string>
     </property>
     <property name="value">
      <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Pressure">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>7.70</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>470</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
     </property>
    </widget>
    <zorder>label</zorder>
@@ -1286,11 +1308,12 @@ background: rgb(255, 255, 255)</string>
    <zorder>Humidity</zorder>
    <zorder>Visibility</zorder>
    <zorder>label_54</zorder>
-   <zorder>pushButton</zorder>
    <zorder>cb_city</zorder>
    <zorder>label_46</zorder>
    <zorder>label_47</zorder>
-   <zorder>Humidity_2</zorder>
+   <zorder>Clouds</zorder>
+   <zorder>Pressure</zorder>
+   <zorder>Search</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
