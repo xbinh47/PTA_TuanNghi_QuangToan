@@ -1,5 +1,8 @@
 from PyQt6 import QtWidgets 
 from PyQt6.QtWidgets import QMessageBox
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtNetwork import QNetworkAccessManager, QNetworkRequest, QNetworkReply
+from PyQt6.QtCore import QUrl
 from PyQt6 import uic
 import sys
 import sqlite3
@@ -78,13 +81,13 @@ class Login(QtWidgets.QMainWindow):
 
         query = f"SELECT * FROM USER WHERE email ='{email}' and password='{password}'" #query select
         result = query_db(query)
-        self.name = result[0][1]
 
         if len(result) == 0:
             err_box.setText("Invalid Username or Password!")
             err_box.exec()
             return
         
+        self.name = result[0][1]
         success_box.setText("Succesfully Login!")
         success_box.exec()
         self.showMainPage()
@@ -127,7 +130,27 @@ class MainPage(QtWidgets.QMainWindow):
         self.Heat.setText(str(weatherInfo["main"]["temp"]))
         self.sunrise.setText((datetime.datetime.utcfromtimestamp(response_json["city"]["sunrise"]) + datetime.timedelta(hours=7)).strftime("%H:%M"))
         self.sunset.setText((datetime.datetime.utcfromtimestamp(response_json["city"]["sunset"]) + datetime.timedelta(hours=7)).strftime("%H:%M"))
-    
+        self.comment.setText(str(weatherInfo["weather"][0]["description"]))
+        response_date = weatherInfo["dt_txt"]
+        formatted_date = datetime.datetime.strptime(response_date, "%Y-%m-%d %H:%M:%S")
+        self.daytime.setText(str(formatted_date))
+        icon = weatherInfo["weather"][0]["icon"]
+        icon_url = QUrl(f"http://openweathermap.org/img/wn/{icon}.png")
+        manager = QNetworkAccessManager()
+        manager.finished.connect(self.on_finished)
+        request = QNetworkRequest(icon_url)
+        manager.get(request)
+    def on_finished(self, reply):
+        if reply.error() == QNetworkReply.NoError:
+            pixmap = QPixmap()
+            pixmap.loadFromData(reply.readAll())
+            self.Wheather_png.setPixmap(pixmap)
+            self.Wheather_png.setScaledContents(True)
+            self.Wheather_png.adjustSize()
+        else:
+            print("Failed to download image:", reply.errorString())
+
+        reply.deleteLater()
 if __name__ == '__main__':
     sqliteConnection = sqlite3.connect('data/data.db')
     def insert_db(query):
@@ -142,7 +165,6 @@ if __name__ == '__main__':
         result = cursor.fetchall() #check if the result was in db(in list)
         cursor.close()
         return result
-    
     app = QtWidgets.QApplication(sys.argv)
 
     loginPage = Login()
