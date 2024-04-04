@@ -595,7 +595,7 @@ background: rgb(255, 255, 255)</string>
      </font>
     </property>
     <property name="text">
-     <string>Today's Highlights</string>
+     <string>Today's Information</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_33">
