@@ -134,23 +134,6 @@ class MainPage(QtWidgets.QMainWindow):
         response_date = weatherInfo["dt_txt"]
         formatted_date = datetime.datetime.strptime(response_date, "%Y-%m-%d %H:%M:%S")
         self.daytime.setText(str(formatted_date))
-        icon = weatherInfo["weather"][0]["icon"]
-        icon_url = QUrl(f"http://openweathermap.org/img/wn/{icon}.png")
-        manager = QNetworkAccessManager()
-        manager.finished.connect(self.on_finished)
-        request = QNetworkRequest(icon_url)
-        manager.get(request)
-    def on_finished(self, reply):
-        if reply.error() == QNetworkReply.NoError:
-            pixmap = QPixmap()
-            pixmap.loadFromData(reply.readAll())
-            self.Wheather_png.setPixmap(pixmap)
-            self.Wheather_png.setScaledContents(True)
-            self.Wheather_png.adjustSize()
-        else:
-            print("Failed to download image:", reply.errorString())
-
-        reply.deleteLater()
 if __name__ == '__main__':
     sqliteConnection = sqlite3.connect('data/data.db')
     def insert_db(query):
