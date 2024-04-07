@@ -220,7 +220,7 @@ background: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(
      <rect>
       <x>280</x>
       <y>10</y>
-      <width>41</width>
+      <width>51</width>
       <height>21</height>
      </rect>
     </property>
@@ -358,9 +358,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>50</y>
+      <y>40</y>
       <width>37</width>
-      <height>12</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -395,9 +395,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>50</y>
+      <y>40</y>
       <width>37</width>
-      <height>12</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -454,9 +454,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>50</y>
+      <y>40</y>
       <width>37</width>
-      <height>12</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -472,9 +472,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>50</y>
+      <y>40</y>
       <width>37</width>
-      <height>12</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -509,9 +509,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>50</y>
+      <y>40</y>
       <width>37</width>
-      <height>12</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -546,9 +546,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>630</x>
-      <y>50</y>
+      <y>40</y>
       <width>37</width>
-      <height>12</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -557,7 +557,7 @@ background: rgb(255, 255, 255)</string>
      </font>
     </property>
     <property name="text">
-     <string>Thu</string>
+     <string>Sat</string>
     </property>
    </widget>
    <widget class="QLabel" name="Week_whether6">
@@ -583,9 +583,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>700</x>
-      <y>50</y>
+      <y>40</y>
       <width>37</width>
-      <height>12</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -594,7 +594,7 @@ background: rgb(255, 255, 255)</string>
      </font>
     </property>
     <property name="text">
-     <string>Thu</string>
+     <string>Sun</string>
     </property>
    </widget>
    <widget class="QLabel" name="Week_whether7">
@@ -805,9 +805,9 @@ background: rgb(255, 255, 255)</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>180</y>
-      <width>71</width>
-      <height>16</height>
+      <y>190</y>
+      <width>101</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="palette">
@@ -843,16 +843,16 @@ background: rgb(255, 255, 255)</string>
      </font>
     </property>
     <property name="text">
-     <string>Wind Status</string>
+     <string>Wind Stats</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_43">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>570</x>
       <y>180</y>
-      <width>121</width>
-      <height>16</height>
+      <width>151</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="palette">
@@ -894,10 +894,10 @@ background: rgb(255, 255, 255)</string>
    <widget class="QLabel" name="label_44">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>340</y>
+      <x>300</x>
+      <y>350</y>
       <width>121</width>
-      <height>16</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="palette">
@@ -939,10 +939,10 @@ background: rgb(255, 255, 255)</string>
    <widget class="QLabel" name="label_45">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>340</y>
+      <x>450</x>
+      <y>350</y>
       <width>121</width>
-      <height>16</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="palette">
@@ -1049,7 +1049,7 @@ background: rgb(255, 255, 255)</string>
      <rect>
       <x>500</x>
       <y>230</y>
-      <width>31</width>
+      <width>51</width>
       <height>41</height>
      </rect>
     </property>
@@ -1084,10 +1084,10 @@ background: rgb(255, 255, 255)</string>
    <widget class="QLabel" name="sunrise">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>620</x>
       <y>240</y>
-      <width>37</width>
-      <height>12</height>
+      <width>61</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
@@ -1116,10 +1116,10 @@ background: rgb(255, 255, 255)</string>
    <widget class="QLabel" name="sunset">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>290</y>
-      <width>37</width>
-      <height>12</height>
+      <x>620</x>
+      <y>280</y>
+      <width>71</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -1226,6 +1226,292 @@ background: rgb(255, 255, 255)</string>
       <height>21</height>
      </rect>
     </property>
+<<<<<<< Updated upstream
+=======
+    <item>
+     <property name="text">
+      <string>Thành phố Hồ Chí Minh</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hà Nội</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nha Trang</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TOKYO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SEOUL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MEXICO CITY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mumbai </string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Delhi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>New York</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JAKARTA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sao Paulo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MANILA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Los Angeles</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Thượng Hải</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Osaka</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAIRO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kolkata</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Karachi</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>350</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clouds</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="Clouds">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>390</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Pressure">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>7.70</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>470</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Pressure_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>O</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Pressure_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>230</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>hPa</string>
+    </property>
+>>>>>>> Stashed changes
    </widget>
    <zorder>label</zorder>
    <zorder>Wheather_png</zorder>
